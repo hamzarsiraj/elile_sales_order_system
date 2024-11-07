@@ -33,7 +33,7 @@ Notes:
 Generated responses:
 
 1. /order-details/<order_id>
-
+```
 {
     "count": 1,
     "next": null,
@@ -65,9 +65,11 @@ Generated responses:
         }
     ]
 }
+```
 
 2. /customer-orders/<customer_id>
 
+```
 {
     "count": 1,
     "next": null,
@@ -93,9 +95,11 @@ Generated responses:
         }
     ]
 }
+```
 
 3. /discounted-orders
 
+```
 {
     "count": 43,
     "next": "http://localhost:8000/discounted-orders?page=2",
@@ -131,7 +135,7 @@ Generated responses:
         ...
     ]
 }
-
+```
 
 ---------------------------------------------------
 
@@ -147,15 +151,19 @@ Running the service:
 
 Dependencies:
 
+```
 pip install django
 pip install djangorestframework
 pip install request
 pip install pytest
 pip install jsonschema
+```
 
 To start the server:
 
+```
 python manage.py runserver
+```
 
 The server start at localhost:8000
 
@@ -164,9 +172,11 @@ The server start at localhost:8000
 Running the tests: 
 
 In order to run the tests:
-1. Start the python server using python manage.py runserver
+1. Start the python server using `python manage.py runserver`
 2. Make the following installations:
+   ```
     pip install pytest
     pip install jsonschema
-3. Switch to the tests directory
-4. Run pytest
+   ```
+4. Switch to the tests directory
+5. Run `pytest`
