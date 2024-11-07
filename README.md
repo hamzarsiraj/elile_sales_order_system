@@ -1,4 +1,4 @@
-Project structure:
+**Project structure:**
 
 Settings: elile_sales_order_system.settings.py
 
@@ -21,7 +21,7 @@ There were 3 endpoints required to be created:
 2. customer-orders/<customer_id>
 3. discounted-orders
 
-Notes: 
+**Notes:** 
 1. The implementation consists of both an ORM and a raw SQL version for all the endpoints. See the views.py file.
     - To access the raw SQL versions, just add the "-raw" suffix to the URL, for e.g. use "order-details-raw/<order_id>" for the first endpoint. See the URLs file.
 
@@ -30,7 +30,7 @@ Notes:
 ---------------------------------------------------
 
 
-Generated responses:
+**Generated responses:**
 
 1. /order-details/<order_id>
 ```
@@ -139,7 +139,7 @@ Generated responses:
 
 ---------------------------------------------------
 
-Pagination:
+**Pagination:**
 
 Default page size: 5
 
@@ -147,7 +147,7 @@ Query params: page_size, page_number
 
 ---------------------------------------------------
 
-Running the service:
+**Running the service:**
 
 Dependencies:
 
@@ -169,7 +169,7 @@ The server start at localhost:8000
 
 ---------------------------------------------------
 
-Running the tests: 
+**Running the tests:**
 
 In order to run the tests:
 1. Start the python server using `python manage.py runserver`
