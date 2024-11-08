@@ -10,6 +10,7 @@ Services:
 2) elile_sales_order_api.services_sql.py - Raw SQL version of data retrieval
 
 URLs: elile_sales_order_api.urls.py
+
 Views: elile_sales_order_api.views.py
 
 Tests: elile_sales_order_api/tests
@@ -23,9 +24,9 @@ There were 3 endpoints required to be created:
 
 **Notes:** 
 1. The implementation consists of both an ORM and a raw SQL version for all the endpoints. See the views.py file.
-    - To access the raw SQL versions, just add the "-raw" suffix to the URL, for e.g. use "order-details-raw/<order_id>" for the first endpoint. See the URLs file.
+    - To access the raw SQL versions, just add the "-raw" suffix to the URL, for e.g., use "order-details-raw/<order_id>" for the first endpoint. See the URL's file.
 
-2. All serializers generate a minimal representation of the entities required by the above 3 endpoints.
+2. All serializers generate a "minimal" representation of the entities required by the above 3 endpoints.
 
 ---------------------------------------------------
 
@@ -143,7 +144,7 @@ There were 3 endpoints required to be created:
 
 Default page size: 5
 
-Query params: page_size, page_number
+Query params: `page_size`, `page_number`
 
 ---------------------------------------------------
 
@@ -165,7 +166,7 @@ To start the server:
 python manage.py runserver
 ```
 
-The server start at localhost:8000
+The server starts at localhost:8000.
 
 ---------------------------------------------------
 
